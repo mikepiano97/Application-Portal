@@ -30,4 +30,8 @@ export default class NavComp extends NavigationMixin(LightningElement) {
         this.showComponentA = false;
         this.showComponentB = true;
     }
+    submitHandler(){
+        this.showComponentA = false;
+        this.showComponentB = true;
+    }
 }
