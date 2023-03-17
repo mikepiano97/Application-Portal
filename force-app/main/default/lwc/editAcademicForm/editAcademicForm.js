@@ -16,6 +16,8 @@ export default class AcademicInformationForm extends LightningElement {
         high_school: HIGH_SCHOOL,
         high_school_type: HIGH_SCHOOL_TYPE
     }
+
+    
     
     handleReset(){
         const inputFields = document.querySelectorAll('lightning-input-field');
