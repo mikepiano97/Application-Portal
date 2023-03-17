@@ -1,0 +1,30 @@
+<template>
+    <div class="slds-box slds-theme_default">
+        <lightning-layout multiple-rows>
+
+            <lightning-layout-item padding="around-small" size="4">
+                <nav class="slds-nav-vertical slds-nav-vertical_shade">
+                    <ul class="slds-nav-vertical__section">
+                        <li class="slds-nav-vertical__item">
+                            <a  onclick={navigateToComponentA} class={componentAClass} href="javascript:void(0);" aria-current={componentACurrent}>Component A</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                            <a onclick={navigateToComponentB} class={componentBClass} href="javascript:void(0);" aria-current={componentBCurrent}>Component B</a>
+                        </li>
+                    </ul>
+                </nav>
+            </lightning-layout-item>
+
+            <lightning-layout-item padding="around-small" size="8">
+                <template if:true={showComponentA}>
+                    <!-- <c-nav-child></c-nav-child> -->
+                    <c-edit-academic-form></c-edit-academic-form>
+                </template>
+                <template if:true={showComponentB}>
+                    <c-nav-child2></c-nav-child2>
+                </template>
+            </lightning-layout-item>
+    
+        </lightning-layout>
+    </div>
+</template>

@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-16-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Create record using lightning-record-form">
+        <lightning-record-edit-form object-api-name ={objectName}>
+            <lightning-messages></lightning-messages>
+            <label for="contact">Last Name</label>
+            <lightning-input-field name="contact" field-name={fields.contactName} required variant="label-hidden"></lightning-input-field>
+            <label for="nickname">Preferred First Name(nickname)</label>
+            <lightning-input-field name="nickname" field-name={fields.contactNickname} required variant="label-hidden"></lightning-input-field>
+            <label for="DOB">Date of Birth(DD-MM-YYYY)</label>
+            <lightning-input-field name="DOB" field-name={fields.contactDOB} required variant="label-hidden"></lightning-input-field>
+            <label for="phone">Phone</label>
+            <lightning-input-field name="phone" field-name={fields.contactPhone} required variant="label-hidden"></lightning-input-field>
+            <label for="email">Email</label>
+            <lightning-input-field name="email" field-name={fields.contactEmail} required variant="label-hidden"></lightning-input-field>
+            <lightning-button type="submit" label="save"></lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

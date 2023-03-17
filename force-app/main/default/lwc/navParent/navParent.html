@@ -1,0 +1,72 @@
+<template>
+        <div class="slds-box slds-theme_default">
+
+        
+    
+    <lightning-layout multiple-rows>
+        <lightning-layout-item padding="around-small" size="4">  
+
+            
+    <div class="slds-p-around_large">
+        <nav class="slds-nav-vertical" aria-label="Sub page">
+            <div class="slds-nav-vertical__section">
+                <h2 id="entity-header" class="slds-nav-vertical__title">Navigation</h2>
+                    <ul aria-describedby="entity-header">
+                        <li class="slds-nav-vertical__item slds-is-active">
+                            <a href="#" class="slds-nav-vertical__action" onclick={handleClick1}>Navigation  Page 1</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                             <a href="#" class="slds-nav-vertical__action" onclick={handleClick2}>Navigation Page 2</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                            <a href="#" class="slds-nav-vertical__action" onclick={handleClick3}>Navigation Page 3</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                            <a href="#" class="slds-nav-vertical__action">Public Reports</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                            <a href="#" class="slds-nav-vertical__action">All Reports</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="slds-nav-vertical__section">
+                <h2 id="folder-header" class="slds-nav-vertical__title">Folders</h2>
+                    <ul aria-describedby="folder-header">
+                        <li class="slds-nav-vertical__item">
+                            <a href="#" class="slds-nav-vertical__action">Created by Me</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                            <a href="#" class="slds-nav-vertical__action">Shared with Me</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                             <a href="#" class="slds-nav-vertical__action">All Reports</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+    </div>
+    </lightning-layout-item>
+    
+    <lightning-layout-item padding="around-small" size="8">
+        <template if:true={item1}>
+            <div id="c1" class="slds-p-around_large">
+                <c-nav-child></c-nav-child>
+            </div>
+        </template>
+        <template if:true={item2}>
+                <div id="c2" class="slds-p-around_large">
+            <c-nav-child2></c-nav-child2>
+        </div>
+        </template>
+        
+        <template if:true={item3}>
+            <div id="c3" class="slds-p-around_large">
+                <c-nav-child3></c-nav-child3>
+            </div>
+        </template>        
+    </lightning-layout-item>                                
+                      
+    
+</lightning-layout>
+</div>
+</template>
