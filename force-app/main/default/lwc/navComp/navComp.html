@@ -18,7 +18,7 @@
             <lightning-layout-item padding="around-small" size="8">
                 <template if:true={showComponentA}>
                     <!-- <c-nav-child></c-nav-child> -->
-                    <c-edit-academic-form></c-edit-academic-form>
+                    <c-edit-academic-form onsubmit={submitHandler}></c-edit-academic-form>
                 </template>
                 <template if:true={showComponentB}>
                     <c-nav-child2></c-nav-child2>
