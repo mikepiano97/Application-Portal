@@ -17,6 +17,7 @@ export default class AcademicInformationForm extends LightningElement {
         high_school_type: HIGH_SCHOOL_TYPE
     }
 
+    // comment here
     
     
     handleReset(){
